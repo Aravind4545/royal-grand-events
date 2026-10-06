@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Grand Events | Premier Event Management & Wedding Decorators in Rajamahendravaram</title>
+  <meta name="description" content="Royal Grand Events - Dedicated Event Management Company in Rajamahendravaram & Vikas Nagar. Expert wedding decor, birthdays, traditional ceremonies & celebrations. Call 094949 44903.">
+  <meta name="keywords" content="Royal Grand Events, Event Management Rajahmundry, Wedding Decorators Rajamahendravaram, Vikas Nagar event planners, birthday stage decor, traditional ceremonies">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Royal Grand Events | Celebrating Life with Royal Elegance">
+  <meta property="og:description" content="Professional Event Management Company dedicated to making your special occasions memorable in Rajamahendravaram & Vikas Nagar.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. MEANINGFUL & BEAUTIFUL ROYAL INTRO SCREEN
+       ======================================================================== -->
+  <aside id="royal-intro" aria-label="Welcome Intro">
+    <canvas id="intro-particles-canvas" class="intro-particles"></canvas>
+    
+    <div class="intro-content">
+      <div class="intro-logo-wrap">
+        <div class="intro-logo-glow"></div>
+        <img src="assets/logo-transparent.png" alt="Royal Grand Events Royal Crest" class="intro-logo-img">
+      </div>
+
+      <p class="intro-subtitle-top">✦ Welcome To The Realm Of Celebrations ✦</p>
+      
+      <h1 class="intro-title">
+        <span class="gold-text">ROYAL GRAND</span> EVENTS
+      </h1>
+
+      <p class="intro-meaning">
+        &ldquo;Every occasion deserves a touch of royalty, where cherished moments become timeless memories.&rdquo;
+      </p>
+
+      <div class="intro-progress-container">
+        <div id="intro-progress-bar" class="intro-progress-bar"></div>
+      </div>
+
+      <button id="btn-enter-site" class="intro-enter-btn" type="button">
+        <span>Enter Celebration</span>
+        <i class="fa-solid fa-crown" style="font-size: 0.85rem; color: var(--color-gold);"></i>
+      </button>
+
+      <button id="btn-skip-intro" class="intro-skip" type="button">Skip Intro ➔</button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       2. TOP BAR & NAVIGATION
+       ======================================================================== -->
+  <header class="royal-header" id="royal-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-wrap" title="Royal Grand Events Homepage">
+        <img src="assets/logo-transparent.png" alt="Royal Grand Events Crest" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">ROYAL GRAND</span>
+          <span class="brand-tagline">Events &bull; Rajamahendravaram</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#highlights" class="nav-link">Highlights</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action Buttons -->
+      <div class="nav-actions">
+        <a href="tel:+919494944903" class="btn-call" title="Call Royal Grand Events">
+          <i class="fa-solid fa-phone"></i>
+          <span>094949 44903</span>
+        </a>
+        <a href="https://wa.me/919494944903?text=Hello%20Royal%20Grand%20Events,%20I%20would%20like%20to%20plan%20an%20event!" target="_blank" rel="noopener" class="btn-gold-cta" title="Book on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Book Event</span>
+        </a>
+        <button class="mobile-nav-toggle" id="mobile-nav-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-wrap">
+        <img src="assets/logo-transparent.png" alt="Logo" style="width: 42px; height: 42px;">
+        <span class="brand-name" style="font-size: 1.1rem;">Royal Grand</span>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <ul class="drawer-links">
+      <li><a href="#hero" class="drawer-link"><span>Home</span> <i class="fa-solid fa-angle-right"></i></a></li>
+      <li><a href="#about" class="drawer-link"><span>About Us</span> <i class="fa-solid fa-angle-right"></i></a></li>
+      <li><a href="#services" class="drawer-link"><span>Our Services</span> <i class="fa-solid fa-angle-right"></i></a></li>
+      <li><a href="#highlights" class="drawer-link"><span>Why Choose Us</span> <i class="fa-solid fa-angle-right"></i></a></li>
+      <li><a href="#gallery" class="drawer-link"><span>Event Gallery</span> <i class="fa-solid fa-angle-right"></i></a></li>
+      <li><a href="#contact" class="drawer-link"><span>Location & Contact</span> <i class="fa-solid fa-angle-right"></i></a></li>
+    </ul>
+
+    <div class="drawer-contacts">
+      <a href="tel:+919494944903" class="btn-contact-call">
+        <i class="fa-solid fa-phone"></i> Call 094949 44903
+      </a>
+      <a href="https://wa.me/919494944903?text=Hello%20Royal%20Grand%20Events!" target="_blank" rel="noopener" class="btn-contact-wa">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         3. HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-layer"></div>
+      <div class="hero-bg-vignette"></div>
+
+      <div class="container hero-content">
+        <div class="royal-pill-badge">
+          <i class="fa-solid fa-crown" style="color: var(--color-gold);"></i>
+          <span>Rajamahendravaram & Vikas Nagar's Premier Event Specialists</span>
+        </div>
+
+        <h1 class="hero-title">
+          Turning Celebrations Into <br>
+          <span class="gold-text">Royal Masterpieces.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Dedicated event management specialists crafting unforgettable wedding stages, joyful milestone parties, and traditional ceremonies with majestic decor and flawless execution.
+        </p>
+
+        <!-- Short & Sweet Highlights Tags -->
+        <div class="hero-highlights-tags">
+          <div class="highlight-tag">
+            <span class="icon">✨</span>
+            <span>Grand Stage & Mandap Decor</span>
+          </div>
+          <div class="highlight-tag">
+            <span class="icon">🎈</span>
+            <span>Themed Birthday & Parties</span>
+          </div>
+          <div class="highlight-tag">
+            <span class="icon">🌸</span>
+            <span>Traditional Ceremonies</span>
+          </div>
+          <div class="highlight-tag">
+            <span class="icon">🤝</span>
+            <span>End-to-End Coordination</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I%20am%20looking%20for%20event%20management%20in%20Rajahmundry!" target="_blank" rel="noopener" class="btn-hero-whatsapp">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+
+          <a href="tel:+919494944903" class="btn-hero-primary">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call 094949 44903</span>
+          </a>
+
+          <a href="#services" class="btn-hero-secondary">
+            <span>Explore Services</span>
+            <i class="fa-solid fa-arrow-down" style="font-size: 0.8rem;"></i>
+          </a>
+        </div>
+
+        <!-- Trust Stats Strip -->
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <span class="trust-number">500+</span>
+            <span class="trust-label">Events Celebrated</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">100%</span>
+            <span class="trust-label">Stress-Free Execution</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">4.9 ★</span>
+            <span class="trust-label">Customer Satisfaction</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">Vikas Nagar</span>
+            <span class="trust-label">Local Expertise &bull; RJY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. ABOUT SECTION (Short, Sweet & Meaningful)
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-badge-wrap">
+          <span class="section-pill">
+            <i class="fa-solid fa-gem"></i> Who We Are
+          </span>
+        </div>
+        <h2 class="section-title">
+          Dedicated To Making Your <br>
+          <span class="gold-text">Special Occasions Memorable</span> 🎊
+        </h2>
+
+        <div class="about-highlight-box">
+          <div class="about-grid">
+            <div>
+              <p class="about-lead-text">
+                <strong>Royal Grand Events</strong> is Rajamahendravaram’s premier event management company, specializing in personalized celebrations across <strong>Vikas Nagar</strong> and beyond.
+              </p>
+              <p class="about-sub-text">
+                Whether you are organizing a lavish wedding reception, an intimate family gathering, or a milestone birthday party, we handle everything with royal flair so you can celebrate stress-free. 🎈
+              </p>
+
+              <ul class="about-checklist">
+                <li class="about-check-item">
+                  <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                  <span><strong>Turnkey Solutions:</strong> Concept design, stage setup, lighting, sound & logistics.</span>
+                </li>
+                <li class="about-check-item">
+                  <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                  <span><strong>Custom Budgets:</strong> High-end aesthetic grandeur tailored to your specific budget.</span>
+                </li>
+                <li class="about-check-item">
+                  <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                  <span><strong>Fast Local Response:</strong> Based directly in Rajamahendravaram on Jawaharlal Nehru Road.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Visual Badge Card -->
+            <div class="about-badge-card">
+              <img src="assets/logo-transparent.png" alt="Royal Grand Emblem" class="about-logo-badge">
+              <h3 class="about-badge-title gold-text">Royal Grand Events</h3>
+              <p class="about-badge-location">
+                <i class="fa-solid fa-location-dot"></i> JN Road, Opp. Vijetha Supermarket, RJY
+              </p>
+              <a href="https://wa.me/919494944903?text=Hi!%20I'd%20like%20to%20discuss%20an%20event%20with%20Royal%20Grand%20Events." target="_blank" rel="noopener" class="btn-gold-cta" style="width: 100%; justify-content: center;">
+                <i class="fa-brands fa-whatsapp"></i> Chat With Event Planner
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. CORE SERVICES (Short, Sweet & High Impact)
+         ======================================================================== -->
+    <section class="section" id="services" style="background: rgba(18, 4, 8, 0.4);">
+      <div class="container">
+        <div class="about-badge-wrap">
+          <span class="section-pill">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> What We Do
+          </span>
+        </div>
+        <h2 class="section-title">
+          Our Signature <span class="gold-text">Event Services</span>
+        </h2>
+        <p class="section-desc">
+          Short, sweet, and executed to royal perfection. Everything you need under one roof.
+        </p>
+
+        <div class="services-grid">
+          <!-- Service 1: Weddings & Receptions -->
+          <article class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/wedding.jpg" alt="Grand Wedding & Reception Stage Decor" class="service-img" loading="lazy">
+              <span class="service-tag">👑 Most Popular</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Royal Weddings & Receptions</h3>
+              <p class="service-tagline">Majestic Mandaps & Dream Stage Sets</p>
+              <ul class="service-bullets">
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Royal crimson & gold stage floral backdrops</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Crystal chandeliers & grand bridal entry setups</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Complete reception seating & ambient mood lighting</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-price-note">Tailored to your venue size</span>
+                <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I'm%20interested%20in%20Wedding%20decor%20services!" target="_blank" rel="noopener" class="btn-service-book">
+                  <span>Inquire Now</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2: Birthday & Milestone Galas -->
+          <article class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/birthday.jpg" alt="Luxury Birthday Party Decoration" class="service-img" loading="lazy">
+              <span class="service-tag">🎈 Vibrant & Classy</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Birthdays & Anniversaries</h3>
+              <p class="service-tagline">Celebrations Full of Joy & Glamour</p>
+              <ul class="service-bullets">
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Gold sequin shimmers & organic balloon arches</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Custom neon signage & marquee glowing numbers</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Themed dessert tables, cake pedestals & photo booths</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-price-note">Customized themes available</span>
+                <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I'm%20planning%20a%20Birthday/Anniversary%20party!" target="_blank" rel="noopener" class="btn-service-book">
+                  <span>Inquire Now</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3: Traditional Ceremonies -->
+          <article class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/traditional.jpg" alt="Traditional South Indian Ceremony Decor" class="service-img" loading="lazy">
+              <span class="service-tag">🌸 Cultural Grandeur</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Traditional Ceremonies</h3>
+              <p class="service-tagline">Authentic Aesthetics & Sacred Grace</p>
+              <ul class="service-bullets">
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Engagements, Half-Saree (Voni) & Dhoti Ceremonies</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Fresh marigold, jasmine floral strings & brass Urli</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Housewarmings (Gruhapravesam) & Naming ceremonies</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-price-note">Auspicious & traditional designs</span>
+                <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I%20am%20looking%20for%20Traditional%20Ceremony%20decor!" target="_blank" rel="noopener" class="btn-service-book">
+                  <span>Inquire Now</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4: Corporate & Gala Banquets -->
+          <article class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/gala.jpg" alt="Corporate Gala & Banquet Stage" class="service-img" loading="lazy">
+              <span class="service-tag">⚡ Elite Professionalism</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Corporate Meets & Galas</h3>
+              <p class="service-tagline">Seamless Execution for Grand Occasions</p>
+              <ul class="service-bullets">
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Stage trussing, LED video walls & professional AV</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Round table banquet stylings & gold chiavari seating</span>
+                </li>
+                <li class="service-bullet">
+                  <span class="service-bullet-dot"></span>
+                  <span>Award functions, brand launches & annual galas</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-price-note">Full technical & stage support</span>
+                <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I%20need%20Corporate/Gala%20event%20management!" target="_blank" rel="noopener" class="btn-service-book">
+                  <span>Inquire Now</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. KEY HIGHLIGHTS (Why Royal Grand Events)
+         ======================================================================== -->
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="about-badge-wrap">
+          <span class="section-pill">
+            <i class="fa-solid fa-star"></i> Why Choose Us
+          </span>
+        </div>
+        <h2 class="section-title">
+          Highlights That Set <span class="gold-text">Us Apart</span>
+        </h2>
+        <p class="section-desc">
+          We bring reliability, luxury, and dedicated personal attention to every function.
+        </p>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <i class="fa-solid fa-chess-queen"></i>
+            </div>
+            <h3 class="highlight-title">Royal Aesthetics</h3>
+            <p class="highlight-desc">
+              Every stage is crafted with majestic color harmony, exquisite lighting, and opulent royal flair.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="highlight-title">Zero-Stress Planning</h3>
+            <p class="highlight-desc">
+              From the initial sketch to final event teardown, our on-ground crew handles every detail seamlessly.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3 class="highlight-title">Transparent Pricing</h3>
+            <p class="highlight-desc">
+              No hidden costs or last-minute surprises. Royal grade celebrations crafted to fit your planned budget.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h3 class="highlight-title">Local RJY Experts</h3>
+            <p class="highlight-desc">
+              Conveniently located in Vikas Nagar / JN Road, ensuring rapid venue visits and timely setup across Rajahmundry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         8. GALLERY SHOWCASE
+         ======================================================================== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="about-badge-wrap">
+          <span class="section-pill">
+            <i class="fa-solid fa-images"></i> Visual Grandeur
+          </span>
+        </div>
+        <h2 class="section-title">
+          Celebrations In <span class="gold-text">Pictures</span>
+        </h2>
+        <p class="section-desc">
+          A glimpse of the grand decor styles and atmospheres we create.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-src="assets/hero_bg.jpg" title="Grand Reception Palace Stage">
+            <img src="assets/hero_bg.jpg" alt="Palace Stage Decor" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-item-title">Palace Reception Stage</span>
+              <span class="gallery-item-sub">Royal Velvet & Crystal Glow</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="assets/wedding.jpg" title="Opulent Wedding Mandap">
+            <img src="assets/wedding.jpg" alt="Golden Wedding Mandap" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-item-title">Golden Mandap Architecture</span>
+              <span class="gallery-item-sub">Lush Crimson Floral Wall</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="assets/birthday.jpg" title="Milestone Birthday Celebration">
+            <img src="assets/birthday.jpg" alt="Birthday Party Theme" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-item-title">Milestone Birthday Gala</span>
+              <span class="gallery-item-sub">Shimmer Gold & Neon Arch</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="assets/traditional.jpg" title="Traditional Temple Ceremony Decor">
+            <img src="assets/traditional.jpg" alt="Traditional South Indian Setup" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-item-title">Traditional Sacred Ceremonies</span>
+              <span class="gallery-item-sub">Marigold, Jasmine & Brass Urli</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="assets/gala.jpg" title="Grand Banquet Gala Setup">
+            <img src="assets/gala.jpg" alt="Corporate Gala & Banquet" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-item-title">Grand Gala & Banquet</span>
+              <span class="gallery-item-sub">Warm Fairy Light Canopy & Chiavari Chairs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. LOCATION & CONTACT (Accurate details from user prompt)
+         ======================================================================== -->
+    <section class="section" id="contact" style="background: rgba(18, 4, 8, 0.5);">
+      <div class="container">
+        <div class="about-badge-wrap">
+          <span class="section-pill">
+            <i class="fa-solid fa-location-dot"></i> Visit Us
+          </span>
+        </div>
+        <h2 class="section-title">
+          Connect With <span class="gold-text">Royal Grand Events</span>
+        </h2>
+        <p class="section-desc">
+          Plan your event with Rajamahendravaram's trusted specialists. Call or drop by our office.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Information Card -->
+          <div class="contact-info-card">
+            <div class="contact-detail-row">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-map-pin"></i>
+              </div>
+              <div>
+                <p class="contact-detail-label">Office Location</p>
+                <p class="contact-detail-value">
+                  Jawaharlal Nehru Rd, Opp. Vijetha Supermarket,<br>
+                  Venkateswara Nagar, Rajamahendravaram,<br>
+                  Andhra Pradesh &ndash; 533103
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div>
+                <p class="contact-detail-label">Direct Phone</p>
+                <p class="contact-detail-value">
+                  <a href="tel:+919494944903"><strong>094949 44903</strong></a>
+                  <span style="display: block; font-size: 0.82rem; color: var(--color-gold-light);">Available 7 days for consultations</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div>
+                <p class="contact-detail-label">Official Website</p>
+                <p class="contact-detail-value">
+                  <a href="http://royalgrandevents.com" target="_blank" rel="noopener">royalgrandevents.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <p class="contact-detail-label">Service Hours</p>
+                <p class="contact-detail-value">
+                  Everyday: 9:00 AM &ndash; 9:30 PM<br>
+                  <span style="font-size: 0.82rem; color: var(--color-text-dim);">On-site event coordination available 24/7</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-buttons-row">
+              <a href="tel:+919494944903" class="btn-contact-call">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Now</span>
+              </a>
+              <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I'd%20like%20to%20plan%20an%20event!" target="_blank" rel="noopener" class="btn-contact-wa">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Map Embed Card -->
+          <div class="contact-map-card">
+            <iframe 
+              class="map-frame"
+              title="Royal Grand Events Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15254.90802772591!2d81.77708575000001!3d17.0094918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a3f898319f39%3A0xe5426177b8f9eef6!2sJawaharlal%20Nehru%20Rd%2C%20Rajamahendravaram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-badge-footer">
+              <span class="map-badge-text">
+                <i class="fa-solid fa-location-dot" style="color: var(--color-gold);"></i> Jawaharlal Nehru Rd, Opp. Vijetha Supermarket
+              </span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Jawaharlal+Nehru+Rd+opp+vijetha+supermarket+Venkateswara+Nagar+Rajamahendravaram" target="_blank" rel="noopener" class="btn-directions">
+                <span>Open in Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       10. FOOTER
+       ======================================================================== -->
+  <footer class="royal-footer">
+    <div class="container">
+      <div class="footer-top">
+        <img src="assets/logo-transparent.png" alt="Royal Grand Events Logo" class="footer-logo">
+        <h3 class="footer-brand-title">
+          <span class="gold-text">ROYAL GRAND</span> EVENTS
+        </h3>
+        <p class="footer-tagline">
+          &ldquo;Dedicated to making your special occasions truly memorable.&rdquo;
+        </p>
+
+        <ul class="footer-links-row">
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#highlights" class="footer-link">Key Highlights</a></li>
+          <li><a href="#gallery" class="footer-link">Gallery</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+
+        <button id="btn-replay-intro" class="footer-replay-intro" type="button">
+          <i class="fa-solid fa-rotate-left"></i> Replay Royal Intro
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Royal Grand Events. All Rights Reserved. Jawaharlal Nehru Rd, Rajamahendravaram, AP 533103.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       11. MOBILE STICKY BOTTOM BAR (Mobile View First-Class Optimization)
+       ======================================================================== -->
+  <div class="mobile-bottom-bar" aria-label="Mobile Quick Actions">
+    <a href="tel:+919494944903" class="m-bar-btn m-bar-call">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919494944903?text=Hi%20Royal%20Grand%20Events,%20I%20want%20to%20plan%20an%20event!" target="_blank" rel="noopener" class="m-bar-btn m-bar-wa">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div id="gallery-lightbox" class="lightbox-modal">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Preview">&times;</button>
+    <img id="lightbox-img" src="" alt="Event Preview" class="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
